@@ -23,6 +23,9 @@ class User extends Authenticatable
         'phone',
         'company',
         'discount',
+        'provider',
+        'provider_id',
+        'avatar',
         'email_verified_at',
         'password',
     ];

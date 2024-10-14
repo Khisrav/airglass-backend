@@ -15,6 +15,7 @@ return new class extends Migration
 
         Schema::create('catalog', function (Blueprint $table) {
             $table->id();  // This creates an UNSIGNED BIGINT by default
+            $table->string('img')->nullable();
             $table->string('name')->nullable();
             $table->bigInteger('purchase_price')->default(0);
             $table->bigInteger('retail_price')->default(0);
